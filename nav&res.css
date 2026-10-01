@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 /* navbar-color */
@@ -17,31 +18,36 @@
 
 /* media start */
 @media (max-width: 767px) {
-    .home-container{
+    .home-container,
+    .about-container{
         width: 100%;
         padding: 35px;
     }
 }
 @media (min-width: 768px) {
-    .home-container{
+    .home-container,
+    .about-container{
         width: 100%;
         padding: 50px;
     }
 }
 @media (min-width: 992px) {
-    .home-container{
+    .home-container,
+    .about-container{
         width: 100%;
         padding: 75px;
     }
 }
 @media (min-width: 1200px) {
-    .home-container{
+    .home-container,
+    .about-container{
         width: 100%;
         padding: 75px 100px;
     }
 }
 @media (min-width: 1400px) {
-    .home-container{
+    .home-container,
+    .about-container{
         width: 100%;
         padding: 75px 150px;
     }
@@ -96,16 +102,9 @@ header .links nav ul li a:hover {
     header {
         position: relative;
     }
-    header .links:hover nav,
-    header .links:hover i::after {
+    header .links:hover nav {
         opacity: 1;
         pointer-events: all;
-    }
-    header .links i {
-        display: inline-block;
-        position: relative;
-        margin-right: 50px;
-        color: white;
     }
     header .links nav {
         background-color: #b1b1b15f;
@@ -114,21 +113,15 @@ header .links nav ul li a:hover {
         left: 0;
         top: 75px;
         margin: 0;
-        opacity: 0;
         pointer-events: none;
+        opacity: 0;
         transition: var(--navbar-transition);
+        z-index: 999;
     }
-    header .links i::after {
-        content: "";
-        position: absolute;
-        right: 0px;
-        top: 15px;
-        border-color: var(--navbar-second-color) transparent  transparent;
-        border-style: solid;
-        border-width: 15px;
-        opacity: 0;
-        pointer-events: none;
-        transition: var(--navbar-transition);
+    header .links i {
+        display: inline-block;
+        margin-right: 50px;
+        color: var(--navbar-font-color);
     }
     header .links nav ul {
         flex-direction: column;
