@@ -19,35 +19,40 @@
 /* media start */
 @media (max-width: 767px) {
     .home-container,
-    .about-container{
+    .about-container,
+    .menu-container {
         width: 100%;
         padding: 35px;
     }
 }
 @media (min-width: 768px) {
     .home-container,
-    .about-container{
+    .about-container,
+    .menu-container {
         width: 100%;
         padding: 50px;
     }
 }
 @media (min-width: 992px) {
     .home-container,
-    .about-container{
+    .about-container,
+    .menu-container {
         width: 100%;
         padding: 75px;
     }
 }
 @media (min-width: 1200px) {
     .home-container,
-    .about-container{
+    .about-container,
+    .menu-container {
         width: 100%;
         padding: 75px 100px;
     }
 }
 @media (min-width: 1400px) {
     .home-container,
-    .about-container{
+    .about-container,
+    .menu-container {
         width: 100%;
         padding: 75px 150px;
     }
